@@ -1,0 +1,8 @@
+﻿using HexPersonalSoft.Application.Common.Interfaces;
+
+namespace HexPersonalSoft.Infrastructure.Services;
+
+public class DateTimeService : IDateTime
+{
+    public DateTime Now => DateTime.Now;
+}

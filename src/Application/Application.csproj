@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>HexPersonalSoft.Application</RootNamespace>
+        <AssemblyName>HexPersonalSoft.Application</AssemblyName>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.7" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Domain\Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Polizas\" />
+      <None Remove="Polizas\Commands\" />
+      <None Remove="Polizas\Commands\CreatePoliza\" />
+      <None Remove="Polizas\Queries\" />
+      <None Remove="Polizas\Queries\GetPolizaWhitPagination\" />
+      <None Remove="Polizas\Queries\ExportTodos\" />
+      <None Remove="Polizas\Commands\DeletePolizaCommand\" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Polizas\" />
+      <Folder Include="Polizas\Commands\" />
+      <Folder Include="Polizas\Commands\CreatePoliza\" />
+      <Folder Include="Polizas\Queries\" />
+      <Folder Include="Polizas\Queries\GetPolizaWhitPagination\" />
+      <Folder Include="Polizas\Queries\ExportTodos\" />
+      <Folder Include="Polizas\Commands\DeletePolizaCommand\" />
+    </ItemGroup>
+</Project>
